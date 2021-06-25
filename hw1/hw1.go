@@ -9,17 +9,14 @@ import (
 )
 
 func main() {
-	gen := fib.FibonacciGen()
-	fmt.Println(gen())
-	fmt.Println(gen())
-	fmt.Println(gen())
-	fmt.Println(gen())
-	fmt.Println(gen())
-	fmt.Println(gen())
+	printMsg("Running task with chess layout")
 	chess.Layout()
-	evenNumbs := countnums.CountNums()
-	fmt.Printf("There had been %v positive even numbers", evenNumbs)
 
+	printMsg("Running task with count even positive nums")
+	evenNumbs := countnums.CountNums()
+	fmt.Printf("There had been %v positive even numbers \n", evenNumbs)
+
+	printMsg("Running task with card anonimization")
 	c, err := card.Anonimize()
 
 	if (err != nil) {
@@ -28,4 +25,18 @@ func main() {
 		fmt.Println(c)
 	}
 
+	printMsg("Generating 6 nums in fib sequence")
+	gen := fib.FibonacciGen()
+	fmt.Println(gen())
+	fmt.Println(gen())
+	fmt.Println(gen())
+	fmt.Println(gen())
+	fmt.Println(gen())
+	fmt.Println(gen())
+
+}
+
+func printMsg(msg string) {
+	fmt.Println("==========================================")
+	fmt.Println(msg)
 }
