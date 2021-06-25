@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"example.com/chess"
-	"example.com/countnums"
-	"example.com/card"
-	"example.com/fib"
+	"example.com/hw1/chess"
+	"example.com/hw1/countnums"
+	"example.com/hw1/card"
+	"example.com/hw1/fib"
 )
 
 func main() {
