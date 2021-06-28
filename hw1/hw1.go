@@ -9,6 +9,7 @@ import (
 )
 
 func main() {
+	
 	printMsg("Running task with chess layout")
 	chess.Layout()
 
